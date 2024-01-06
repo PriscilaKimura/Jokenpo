@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/FundoPedraPapel.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+@keyframes mudarCores {
+    0% { color: rgb(107, 22, 156); }
+    25% { color: rgb(61, 189, 248); }
+    50% { color: rgb(45, 211, 45); }
+    75% { color: rgb(241, 145, 153); }
+    100% { color: rgb(250, 50, 217); }
+  }
+  
+  h1 {
+    font-family: 'Chelsea Market', system-ui;
+    font-family: 'Concert One', sans-serif;
+    font-size: 80px;
+    animation: mudarCores 4s infinite; /* animação com duração de 4 segundos e repetição infinita */
+  }
+ 
+.container {
+    padding: 20px;
+    background-color: #ffff;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Aumentando a largura do contêiner para 70% da largura do viewport */
+    max-width: 700px; /* Definindo uma largura máxima para o contêiner */
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 80px; /* Tamanho do texto dos emojis */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    width: 120px; /* Definindo uma largura fixa para os botões */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: #9000a3;
+}
+
+#paper {
+    background-color: #46cf5d;
+}
+
+#scissors {
+    background-color: #34b9f7;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Chelsea Market', system-ui;
+    font-family: 'Concert One', sans-serif;
+    font-size: 30px;
+}
+
+.your-score span {
+    color: rgb(35, 20, 245);
+}
+
+.machine-score span {
+    color:rgb(252, 45, 17);
+}
+
+/* Media query para telas menores que 1050px */
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 50px; /* Reduz o tamanho do título para telas menores */
+        text-align: center;
+        margin: 0;
+    }
+
+    .container {
+        width: 90%; /* Ajusta a largura do contêiner para ocupar mais espaço em telas menores */
+        max-width: 400px; /* Defina uma largura máxima para o contêiner */
+    }
+
+    .buttons {
+        flex-direction: column; /* Altera a direção dos botões para uma coluna */
+        align-items: center; /* Centraliza os botões na coluna */
+    }
+
+    button {
+        font-size: 50px; /* Reduz o tamanho do texto dos botões para telas menores */
+        width: 200px; /* Define uma largura para os botões */
+        margin: 10px 0; /* Adiciona margem entre os botões */
+    }
+
+    p {
+        font-size: 20px; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+}
+
