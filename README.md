@@ -41,3 +41,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 ---
 
 Divirta-se jogando JoKenPo! 😊✨
+https://priscilakimura.github.io/Jokenpo/
