@@ -34,11 +34,5 @@ https://github.com/PriscilaKimura/Jokenpo/assets/141864300/9cc8b402-b0ef-4092-a6
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias, correções de bugs ou novas funcionalidades.
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
 Divirta-se jogando JoKenPo! 😊✨
 https://priscilakimura.github.io/Jokenpo/
